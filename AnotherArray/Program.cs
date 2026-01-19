@@ -1,7 +1,8 @@
 ﻿
-//
 
 /*
+
+
 
 // one dimensional array for 10 elements
 
@@ -14,7 +15,11 @@ Random random = new Random();
 for (int i = 0; i < nums.GetLength(0); i++)
 {
 
-    Console.WriteLine($"{nums[i] = random.Next(-10, 10)}");
+    nums[i] = random.Next(-10, 10);
+    if(i % 2 == 0)
+    {
+        Console.WriteLine(nums[i]);
+    }
 
 }
 
@@ -35,7 +40,6 @@ if(sum < 0)
 }
 
 
-  
 
 
 
