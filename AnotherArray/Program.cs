@@ -1,13 +1,31 @@
-﻿// 9x9 array with the multiplication table
+﻿
 
+
+
+// 9x9 array with the multiplication table
+/*
 int[,] multiArr = new int[9,9];
 
+
+for(int i = 0,first = 0; first != multiArr.GetLength(0); i++, first++)
+{
+
+  
+    for (int j = 0,second = 0; second != multiArr.GetLength(1) ; j++, second++)
+    {
+
+        multiArr[first, second] = (first + 1) * (second + 1);
+        Console.Write($"{multiArr[first, second]}\t");
+       
+    }
+    Console.WriteLine();
+}
 
 
 
 //2D grid with rndom numbers
 
-/*
+
 int[,] numbers =
 {
     {100,21,32,43,54},
