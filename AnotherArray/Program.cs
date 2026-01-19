@@ -1,12 +1,13 @@
 ﻿
-
+//
 
 /*
+
 // one dimensional array for 10 elements
 
 int[] nums = new int[10];
 
-int j = 0;
+int sum = 0;
 
 Random random = new Random();
 
@@ -20,10 +21,22 @@ for (int i = 0; i < nums.GetLength(0); i++)
 for(int f = 0;f < nums.GetLength(0); f++)
 {
 
-   j = nums[f] + j;
-  nums[f] = j;
+   sum = nums[f] + sum;
+  nums[f] = sum;
 }
-Console.WriteLine($"{j} the sum of the elements in the array.");
+
+if(sum > 0)
+{
+    Console.WriteLine($"{sum} the sum of the elements in the array is a positive number.");
+}
+if(sum < 0)
+{
+    Console.WriteLine($"{sum} the sum of the elements in the array is a negative number.");
+}
+
+
+  
+
 
 
 // 9x9 array with the multiplication table
@@ -43,9 +56,13 @@ for( int first = 0; first < multiArr.GetLength(0); first++)
        
     }
     Console.WriteLine();
+
+
+
 }
 
 
+/*
 
 //2D grid with rndom numbers
 
