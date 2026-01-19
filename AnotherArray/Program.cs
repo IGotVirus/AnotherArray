@@ -206,22 +206,3 @@ namespace Program
 }
 
 
-/*
-
-enum WeekDays
-{
-
-Monday,
-Tuesday,
-Wednesday,
-Thursday,
-Friday,
-Saturday,
-Sunday
-}
-  //an Enum program
-
-
-
-
-*/
