@@ -1,17 +1,41 @@
 ﻿
 
 
+/*
+// one dimensional array for 10 elements
+
+int[] nums = new int[10];
+
+int j = 0;
+
+Random random = new Random();
+
+for (int i = 0; i < nums.GetLength(0); i++)
+{
+
+    Console.WriteLine($"{nums[i] = random.Next(-10, 10)}");
+
+}
+
+for(int f = 0;f < nums.GetLength(0); f++)
+{
+
+   j = nums[f] + j;
+  nums[f] = j;
+}
+Console.WriteLine($"{j} the sum of the elements in the array.");
+
 
 // 9x9 array with the multiplication table
-/*
+
 int[,] multiArr = new int[9,9];
 
 
-for(int i = 0,first = 0; first != multiArr.GetLength(0); i++, first++)
+for( int first = 0; first < multiArr.GetLength(0); first++)
 {
 
   
-    for (int j = 0,second = 0; second != multiArr.GetLength(1) ; j++, second++)
+    for (int second = 0; second < multiArr.GetLength(1); second++)
     {
 
         multiArr[first, second] = (first + 1) * (second + 1);
